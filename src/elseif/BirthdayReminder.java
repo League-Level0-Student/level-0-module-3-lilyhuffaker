@@ -11,21 +11,25 @@ public class BirthdayReminder {
 	public static void main(String[] args) {
 	
 		// 1. correct the birthdays for your family below
-		String momsBirthday = "January 24th";
-		String dadsBirthday = "June 9th";
-		String myBirthday = "April 16th";
-
-		// 2. Find out which birthday the user wants and and store their response in a variable
-	
-		// 3. Print out what the user typed
-		
-		// 4. if user asked for "mom"
-			//print mom's birthday
-		// 5. if user asked for "dad"
-			// print dad's birthday
-		// 6. if user asked for your name
-			// print myBirthday
-		//7. otherwise print "Sorry, i don't remember that person's birthday!"
-
+		String momsBirthday = " Septamber 30";
+		String dadsBirthday = " march 16";
+		String myBirthday = " June 27";
+		String brothersBirthday = " May 30";
+String name=JOptionPane.showInputDialog("Who's birthday woyuld y'all like to know 'bout?");
+if(name.equals("Mom")) {
+	JOptionPane.showMessageDialog(null, "Mom's birthday is on"+momsBirthday);
+}
+else if(name.equals("Dad")) {
+	JOptionPane.showMessageDialog(null, "Dad's birthday is"+dadsBirthday);
+}
+else if(name.equals("Lily")||name.equals("Me")) {
+	JOptionPane.showMessageDialog(null, "Lily's birthday is"+myBirthday);
+}
+else if(name.equals("Cole")) {
+	JOptionPane.showMessageDialog(null, "Cole's birthday is"+brothersBirthday);
+}
+else {
+	JOptionPane.showMessageDialog(null, "sorry, we couldnt find that birthday...plz try again.");
+}
 	} 
 }
