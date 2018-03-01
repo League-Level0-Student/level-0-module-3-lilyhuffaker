@@ -13,14 +13,18 @@ public class RobotColorChooser {
 		DrNugget.miniaturize();
 		DrNugget.setSpeed(5);
 		//3. Ask the user what color they would like the robot to draw
+	//add for loop
 		String Culor=JOptionPane.showInputDialog("Dr.Nugget: What Color Would You like?");
 		JOptionPane.showMessageDialog(null, "Dr.Nugget: Ok, I'll get right on that!");
 		//4. Use an if/else statement to set the pen color that the user requested
 		if(Culor.equals("Red")) {
-			//instert color her3e boi!
+			DrNugget.setPenColor(250,0,0);
 		}
         //5. If the user doesn’t enter anything, choose a random color
-
+		else {
+			
+			DrNugget.setRandomPenColor();
+		}
         //6. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		
 		//4. Set the pen width to 10
